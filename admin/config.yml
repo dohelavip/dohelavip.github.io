@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: dohelavip.github.io
+  repo: dohelavip/dohelavip.github.io
   branch: main
   site_domain: dohela.com
 
