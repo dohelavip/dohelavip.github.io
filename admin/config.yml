@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: dohelavip/dohelavip.github.io
-  branch: main
+  branch: master
   site_domain: dohela.com
 
 media_folder: "assets/img/posts" # Media files will be stored in the repo under images/uploads
