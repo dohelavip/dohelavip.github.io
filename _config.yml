@@ -6,19 +6,19 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Yudish Tira
-tagline: "<a target='_blank' href='https://en.wikipedia.org/wiki/Yudhishthira'>I'm the eldest.</a> I don't lie, I never will!"
+title: Dohela | Eski bir efsanenin yarım kalmış hikayesi.
+tagline: "Eski bir efsanenin yarım kalmış hikayesi."
 picture: yudish.jpg #keep a 100x100 image inside images folder.
-email: hello@email.com
+email: root@dohela.com
 description: > # this means to ignore newlines until "baseurl:"
   Yudish is a minimal Jekyll theme for content oriented websites with less distractions.
-baseurl: "/yudish" # the subpath of your site, e.g. /blog
-url: "http://webjeda.com" # the base hostname & protocol for your site
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://dohela.com" # the base hostname & protocol for your site
 brand-color: "#e74c3c"
 permalink: ":title/"
 
 # Footer
-credits: webjeda #credits on the footer
+credits: dohela #credits on the footer
 version: 2.0
 
 # Build settings
