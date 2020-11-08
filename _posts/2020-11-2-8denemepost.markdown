@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to My World!"
+title:  "deneme post"
 date:   2016-09-10 22:37:48 +0530
 ---
 
