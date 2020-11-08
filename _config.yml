@@ -1,104 +1,90 @@
-# Site Settings
-name: Dohela
-title: Dohela | Eski bir efsanenin yarım kalmış hikayesi.
-description: 
-  
-tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
-show_hero: true
-menu:
-  - title: Home
-    url: /
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
-  - title: Feed
-    url: /feed.xml
-email: root@dohela.com
-disqus_username: disqus_username
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
+# Site settings
+title: Yudish Tira
+tagline: "<a target='_blank' href='https://en.wikipedia.org/wiki/Yudhishthira'>I'm the eldest.</a> I don't lie, I never will!"
+picture: yudish.jpg #keep a 100x100 image inside images folder.
+email: hello@email.com
+description: > # this means to ignore newlines until "baseurl:"
+  Yudish is a minimal Jekyll theme for content oriented websites with less distractions.
+baseurl: "/yudish" # the subpath of your site, e.g. /blog
+url: "http://webjeda.com" # the base hostname & protocol for your site
+brand-color: "#e74c3c"
+permalink: ":title/"
 
-# Social Media Settings
-# Remove the item if you don't need it
-github_username: dohelavip
-facebook_username: facebook_username
-twitter_username: spydohela
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
-
-
-# Posts Settings
-show_time_bar: true
-show_modal_on_exit: false
-show_modal_on_finish_post: true
-two_columns_layout: true
-
-
-# Advanced Settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
-language: "en"
-categories_folder: category
-sent_message_url: "/contact/message-sent/"
-
+# Footer
+credits: webjeda #credits on the footer
+version: 2.0
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 highlighter: rouge
-permalink: /:title/
-collections:
-  authors:
-    output: true
-paginate_path: "/page/:num/"
-show_get_theme_btn: true
-use_logo: false
 
-# Content paginator
-paginate_content:
-  enabled: true
-  debug: false
-  collections:
-    - posts
-  auto: false
-  separator: "--page-break--"
-  permalink: "/:num/"
-  seo_canonical: true
-  properties:
-    part:
-      is_generated: true
-    last:
-      is_generated: true
-    single:
-      is_generated: true
-
-# SASS
 sass:
   style: compressed
 
-# Plugins
+disqus-shortname: webjeda-sample
+analytics: UA-83979019-1
+
+include: [_pages]
+
+#compress.html
+compress_html:
+  clippings:
+    [
+      html,
+      div,
+      p,
+      ul,
+      td,
+      h1,
+      h2,
+      h3,
+      h4,
+      link,
+      meta,
+      footer,
+      nav,
+      img,
+      header,
+      hr,
+      br,
+      head,
+      style,
+      li,
+      ul,
+      ol,
+      time,
+      main,
+      script,
+      title,
+    ]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+prose:
+  rooturl: ""
+  siteurl: "http://prose.github.io/starter/"
+  relativeLinks: "http://prose.github.io/starter/links.jsonp"
+  media: "images"
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+
 plugins:
   - jekyll-paginate
-  - jekyll-paginate-content
-
-# Exclude my node related stuff
-exclude: [
-  'package.json',
-  'package-lock.json',
-  'src',
-  'node_modules',
-  'initpost.sh',
-  'Gemfile',
-  'Gemfile.lock',
-  'gulpfile.js',
-  'README.md'
-]
-
-# Theme
-version: v3.1.0
+  - jekyll-seo-tag
