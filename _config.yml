@@ -1,123 +1,95 @@
-full_rebuild: true
-name: Gridster
-description: the material experience for jekyll
-destination: jekyllbuild
-url: #place url
-baseurl: #place folder name if site is served in subfolder
-permalink: /:title/
-paginate: 8
-paginate_path: /page/:num/
-infinite_scroll: true #change to false if you want to use pagination
-gems: [jekyll-paginate]
-tag_dir: /tag
-category_dir: /category
-author_dir: /author
-author_title_prefix: 'Posted by '
-media_folder: /media/compressed
-author_default_avatar: /profile-pic.jpg
-tumblr: "#"
-pinterest: "#"
-instagram: "#"
-twitter: "#"
-facebook: "#"
-youtube: "#"
-vimeo: "#"
-soundcloud: "#"
-
-encoding: utf-8
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post-material-sidebar-left"
-      type: "standard"
-      homedisplay: "featimg"
+# Jekyll configuration
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-relative_permalinks: false
-exclude: [.git, .gitignore, sass, .sass-cache, package.json, gruntfile.js, node_modules, README.md, jekyllbuild]
+highlighter: rouge
+paginate: 100 # it will paginate after this number
+language: 'en-uk'
+words_per_minute: 200
 
-# prose.io configurations
-prose:
-  media: "img"
-  metadata:
-    _posts:
-      - name: "title"
-        field:
-          element: "text"
-          label: "title"
-      - name: "layout"
-        field:
-          element: "select"
-          label: "Layout"
-          help: "display post at full width or with sidebar"
-          options:
-            - name: "with sidebar"
-              value: "post"
-            - name: "full width"
-              value: "post-full"
-      - name: "author"
-        field:
-          element: "text"
-          label: "Author"
-          help: "author id as defined within _data/authors.yml"
-          type: "text"
-      - name: "featimg"
-        field:
-          element: "text"
-          label: "Featured Image"
-          help: "featured image within the img-folder"
-          type: "text"
-      - name: "type"
-        field:
-          element: "select"
-          label: "Post Type"
-          help: "each type has some special feature"
-          options:
-            - name: "Standard"
-              value: "standard"
-            - name: "Image"
-              value: "image"
-            - name: "Gallery"
-              value: "gallery"
-            - name: "Audio"
-              value: "audio"
-            - name: "YouTube"
-              value: "youtube"
-            - name: "Vimeo"
-              value: "vimeo"
-      - name: "homedisplay"
-        field:
-          element: "select"
-          label: "Home Display"
-          help: "decide whether to display embedded element (for post types: audio, youtube, vimeo) or Featured Image on home page"
-          options:
-            - name: "Featured Image"
-              value: "featimg"
-            - name: "Embedded Element"
-              value: "iframe"
-      - name: "vimeo-embed"
-        field:
-          element: "text"
-          label: "Vimeo Embedding Code"
-          help: "Set post type to vimeo in order for this to work"
-      - name: "gallery-id"
-        field:
-          element: "text"
-          label: "Gallery ID"
-          help: "ID of the gallery defined within _data/galleries.yml - use include in content to use"
-      - name: "audio-embed"
-        field:
-          element: "text"
-          label: "Audio Embedding Code"
-          help: "Set post type to audio in order for this to work"
-      - name: "yt-video-id"
-        field:
-          element: "text"
-          label: "YouTube Video ID"
-          help: "Set post type to youtube in order for this to work. Do not set featured image, as the youtube video thumbnail will be used"
-          type: "text"
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+baseurl: /jasper2/
+
+# Website info
+title: Ghost
+description: The professional publishing platform
+cover: assets/images/blog-cover.jpg
+logo: assets/images/blog-icon.png
+logo_dark: assets/images/favicon.png
+favicon: assets/images/favicon.png
+CNAME: #add cname for website to be created
+
+# Social info
+navigation: True # show the navbar links
+subscribers: True # you need to connect an external service for this to work,
+# if 'True' the submit button is disabled for now, but you can change that
+# by editing `_includes/subscribe-form.html`
+twitter: tryghost # replace by your username
+facebook: ghost # replace by your username
+
+# Disqus
+disqus: False
+disqus_shortname: jekyller # replace with your disqus username
+
+# Google Analytics
+google_analytics: UA-69281367-1 # replace with your GA tracking identifier
+
+# Permalinks
+permalink: /:title
+# permalink: /author/:author
+# permalink: /tag/:tag
+
+# Authors' info in `_data/authors.yml`
+# Tags' info in `_data/tags_info.yml`
+
+# gems and other configs
+plugins_dir: [_plugins]
+plugins: [jekyll-paginate, jekyll-feed]
+
+feed:
+  path: feed.xml
+
+# Additional settings available on the front-matter
+# Site logo in the index.html (as in demo.ghost.io)
+# Author's page cover in _layouts/author.html
+# The same for page.html and tag.html layouts
+# Post's page cover as a per-post basis _posts/...
+# Disqus comments as a per-post basis
+# ...
+
+# Settings for building master branch with travis-ci
+# with jekyll-travis
+
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
+safe: False
+lsi: False
+username: jekyller
+repo: jasper2
+branch: master
+relative_source: ../jasper2/
+destination: ../jasper2-pages/
+production_url:  https://jekyller.github.io/jasper2/
+source_url:  https://github.com/jekyller/jasper2/
+
+exclude:
+  - assets/css
+  - node_modules
+  - vendor
+  - .travis.yml
+  - Gemfile
+  - Gemfile.lock
+  - GHOST.txt
+  - gulpfile.js
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README.md
+  - script.py
+  - changelog.md
+  - "*.Rmd"
+  - .git*

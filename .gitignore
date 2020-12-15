@@ -1,9 +1,32 @@
-# https://git-scm.com/docs/gitignore
-# https://help.github.com/articles/ignoring-files
-# Example .gitignore files: https://github.com/github/gitignore
-/bower_components/
-/node_modules/
-/.brackets.json
-/jekyllbuild/
-/documentation/node_modules/
-/documentation/jekyllbuild/
+# OS X
+.DS_Store
+
+# Jekyll build
+/_site/
+.jekyll-metadata
+#Gemfile.lock
+
+# webstorm
+.idea/
+
+# others
+*.swp
+package-lock.json
+
+# site build
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+vendor
+Gemfile.lock
+node_modules
