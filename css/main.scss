@@ -11,7 +11,7 @@ $base-line-height: 1.8;
 $spacing-unit:     30px;
 
 $text-color:       #555;
-$background-image: url('/images/kali.jpg');;
+@include background-image-2x-jpg('/images/kali.jpg');
 $brand-color:      #514A9D;
 $brand-color-2:    #24C6DC;
 $grey-color:       #828282;
