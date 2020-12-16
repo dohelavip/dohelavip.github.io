@@ -1,7 +1,7 @@
 # Site Settings
-name: Dohela
-title: Dohela | Sanalın en dibi
-description: Eski bir efsanenin yarım kalmış hikayesi...
+name: Jekflix
+title: Jekflix | A blog theme for Jekyll
+description: Jekflix is a template for Jekyll inspired by Netflix and made by
   Thiago Rossener.
 tags:
   - blog
@@ -11,15 +11,15 @@ tags:
   - netlify
 show_hero: true
 menu:
-  - title: Anasayfa
+  - title: Home
     url: /
-  - title: Hakkımda
+  - title: About
     url: /about
-  - title: İletişiö
+  - title: Contact
     url: /contact
   - title: Feed
     url: /feed.xml
-email: root@dohela.com
+email: youremail@test.com
 disqus_username: disqus_username
 
 
