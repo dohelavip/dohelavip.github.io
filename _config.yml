@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Ashwathama
+title: Dohela.com
 description: > # this means to ignore newlines until "baseurl:"
- Ashwathama is a minimal website with an app like design. It also features card layouts for website elements.
+ Dohela.com, uygulama benzeri bir tasarıma sahip minimal bir web sitesidir. Ayrıca, web sitesi öğeleri için kart düzenleri içerir.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "dohela.com"
 permalink: :title/
