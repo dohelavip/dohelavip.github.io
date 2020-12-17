@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  ORTADAKİ ADAM SALDIRISI (MITM) SALDIRISI
-subtitle: Ortadaki Adam Eğitimi: Ortadaki Adam Saldırıları, Güvenlik Açıkları ve MITM Saldırılarını Nasıl Önleyeceğinizi Öğrenin.
 date:   2020-12-17 20:45:55 +0300
 image:  01.jpg
 tags:   [linux]
