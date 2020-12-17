@@ -1,8 +1,8 @@
 # Site
 name: 'Dohela'
 description: 'Eski bir efsanenin yarım kalmış hikayesi...'
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+logo: '/assets/images/logo.png'
+favicon: '/assets/images/favicon.ico'
 baseurl: ''
 disqus: 'demowebsite'
 email: 'root@dohela.com'
