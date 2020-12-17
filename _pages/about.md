@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Hakkımda
-image: 08.jpg
 permalink: /about/
 ---
 
