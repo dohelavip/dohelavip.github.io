@@ -1,51 +1,171 @@
-# Jekyll Theme - Mundana by WowThemes.net
+Galada - Easy & Simple Theme for Personal Blog
+======
+Galada is an easy and simple theme for Jekyll. Dark colors, give it a special exquisite look. A careful approach to design and features make it an ideal solution for a personal blog.
 
-[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/) &nbsp; | &nbsp; 
-[Download](https://github.com/wowthemesnet/mundana-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; 
-[Buy me a coffe](https://www.wowthemes.net/donate/) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/bootstrap-templates/mundana-theme-jekyll/) &nbsp; | &nbsp; 
-[WordPress version](https://www.wowthemes.net/themes/mundana-wordpress/) 
+* * *
 
-![mundana jekyll theme screenshot](assets/images/screenshot.jpg)
+Table of Contents
+-----------------
+*   [Features](#features)
+*   [Demo](#demo)
+*   [Deployment](#deployment)
+*   [Posts](#posts)
+*   [Disqus Comments](#DisqusComments)
+*   [Instagram](#instagram)
+*   [Google Analytics](#GoogleAnalytics)
+*   [Update favicon](#UpdateFavicon)
+*   [Credits](#Credits)
+*   [Support](#Support)
 
-### Documentation
+* * *
 
-[How to install & use](https://bootstrapstarter.com/bootstrap-templates/mundana-theme-jekyll/)
+### Features
 
-### Contribute to Mundana repository
+* 100% responsive and clean theme
 
-1. In the top-right corner of this page, click **Fork**.
+* Optimized for mobile devices
 
-2. Clone a copy of your fork on your local, replacing *YOUR-USERNAME* with your Github username.
+* Minimal design
 
-   `git clone https://github.com/YOUR-USERNAME/mundana-theme-jekyll.git`
+* Valid HTML5 code
 
-3. **Create a branch**: 
+* Post sharing
 
-   `git checkout -b <my-new-feature-or-fix>`
+* Subscription form
 
-4. **Make necessary changes and commit those changes**:
+* Supports Disqus Comments
 
-   `git add .`
+* Instagram Feed
 
-   `git commit -m "new feature or fix"`
+* Ionicons Icons
 
-5. **Push changes**, replacing `<add-your-branch-name>` with the name of the branch you created earlier at step #3. :
-
-   `git push origin <add-your-branch-name>`
-
-6. Submit your changes for review. Go to your repository on GitHub, you'll see a **Compare & pull request** button. Click on that button. Now submit the pull request.
-
-That's it! Soon I'll be merging your changes into the master branch of this project. You will get a notification email once the changes have been merged. Thank you for your contribution.
+* Google Fonts
 
 
-### Copyright
+* * *
 
-Copyright (C) 2019 WowThemes.net.
+### Demo
 
-Theme designed and developed by [Sal](https://www.wowthemes.net), *free* under MIT license. 
+Check the theme in action [Demo](https://artemsheludko.github.io/galada/)
 
-<a href="https://www.wowthemes.net/donate/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+![Main page preview](https://github.com/artemsheludko/galada/blob/master/img/galada-main-page.jpg?raw=true)
 
-### Live Demo
+The post page would look like this:
 
-[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/)
+![Post page preview](https://github.com/artemsheludko/galada/blob/master/img/galada-post.jpg?raw=true)
+
+* * *
+
+### Deployment
+
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
+
+I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
+
+* * *
+
+### Posts
+
+To create a new post, you can create a new markdown file inside the \_posts directory by following the [recommended file structure](https://jekyllrb.com/docs/posts/#creating-post-files).
+
+      ---
+      layout: post
+      title: Premiere on Broadway
+      date: 2018-08-23 16:04:00 +0300
+      image: 03.jpg
+      tags: [Rest]
+      ---
+          
+
+You can set the tags and the post image.
+
+Add post images to **/img/** directory.
+
+For tags, try to not add space between two words, for example, `Ruby on Rails`, could be something like (`ruby-on-rails`, `Ruby_on_Rails`, or `Ruby-on-Rails`).
+
+* * *
+
+### Disqus Comments
+
+Galada Theme comes with Disqus comments enabled.
+
+Open `_config.yml` file, and change the `mr-brown` value on line 26 with your [Disqus account shortname](https://help.disqus.com/customer/portal/articles/466208).
+
+      Comment Section (Disqus)
+      disqus-identifier: mr-brown \# Add your shortname for Disqus Comment. For example mr-brown
+          
+
+That’s all you need to setup Disqus from the theme side. If you get any issue regarding that comments are unable to load. First, make sure you have [registered your website with Disqus (Step 1)](https://help.disqus.com/customer/portal/articles/466182-publisher-quick-start-guide).
+
+And also check [Disqus troubleshooting guide](https://help.disqus.com/customer/portal/articles/472007-i-m-receiving-the-message-%22we-were-unable-to-load-disqus-%22) if you still have issues.
+
+* * *
+
+### Instagram
+
+The Instagram feed is working using [Instafeed.js](http://instafeedjs.com/) to show the photos.
+
+First, you will need to get your account `userId` and `accessToken` from the following URLs:
+
+*   userId: [smashballoon.com/instagram-feed/find-instagram-user-id](https://smashballoon.com/instagram-feed/find-instagram-user-id/)
+*   accessToken: [instagram.pixelunion.net](http://instagram.pixelunion.net/)
+
+Second, open the `js/common.js` file and replace the `userId` and `accessToken` values.
+
+            var instagramFeed = new Instafeed({
+              get: 'user',
+              limit: 6,
+              resolution: 'standard_resolution',
+              userId: '8987997106',
+              accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
+              template: ''
+            });
+          
+
+Third, open the `_config.yml` file and replace the `instafeed: false` on `instafeed: true` value.
+
+            \# Instagram Feed
+            instafeed: false \# To enable the instafeed, use the value true. To turn off use the value false.
+          
+
+* * *
+
+### Google Analytics
+
+To integrate Google Analytics, open `_config.yml`, and add your Google Analytics identifier.
+
+    \# Google Analytics
+    google-analytics: \# Add your identifier. For example UA-99631805-1
+          
+
+* * *
+
+### Update favicon
+
+You can find the current favicon (favicon.ico) inside the theme root directory, just replace it with your new favicon.
+
+* * *
+
+### Credits
+
+I have used the following scripts, fonts or other files as listed.
+
+*   [Google Fonts](https://fonts.google.com/specimen/Nunito) (Nunito, Sans Serif).
+*   [Ionicons Icons](https://ionicons.com/)
+*   [FitVids.js](http://fitvidsjs.com/)
+*   [Instafeed.js](http://instafeedjs.com/)
+*   [jQuery.com](https://jquery.com/)
+*   [Wait For Images](https://github.com/alexanderdickson/waitForImages)
+*   Preview Images form [unsplash.com](https://unsplash.com/), [pexels.com](https://www.pexels.com/)
+
+* * *
+### License
+
+Mit License
+
+* * *
+
+### Support
+
+<p>If you like the themes that I create you can become my sponsor on <a href="https://www.patreon.com/artemsheludko" target="_blank">Patreon</a>.
+<p align="center"><b>Thank you for your support ❤️</b></p>

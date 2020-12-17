@@ -1,59 +1,72 @@
-# Site
-name: 'Dohela'
-description: 'Eski bir efsanenin yarım kalmış hikayesi...'
-logo: '/assets/images/logo.png'
-favicon: '/assets/images/favicon.ico'
-baseurl: ''
-disqus: 'demowebsite'
-email: 'root@dohela.com'
-mailchimp-list: ''
+#-------------------------------
+# General Site Settings
 
-include: ["_pages"]
-permalink: /:title/
+title: Dohela | Sanal bir blog...
+description: Eski bir efsanenin yarım kalmış hikayesi... # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://dohela.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Plugins
-plugins: 
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-seo-tag
-  
-authors:
-    dohela:
-      name:           dohela
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar1.jpg
-      bio:            "Merhaba,ben dohela web güvenliği ve bir çok vuln yöntemleriyle uğaşıyorum."
-      email:          root@dohela
-      twitter:        https://twitter.com/spydohela
 
-  
- 
-# Defaults
-defaults:
+#-------------------------------
+# About Section
+author-name:   Dohela
+author-avatar: 09.jpg
 
-  # all posts
-  - scope:
-      path: "_posts"
-    values:
-      layout: post
-      author: sal
-      avatar: /assets/images/avatar1.jpg
-      
-  # all pages
-  - scope:
-      path: "_pages"
-    values:
-      layout: page
-      
-# Syntax
+
+#-------------------------------
+# Contact links
+facebook:  https://facebook.com/ # Add your Facebook handle
+twitter:   https://twitter.com/ # Add your Facebook handle
+instagram: https://www.instagram.com/ # Add your Facebook handle
+pinterest: https://www.pinterest.com/ # Add your Facebook handle
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+
+
+#-------------------------------
+# Instagram Feed
+instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
+
+
+#-------------------------------
+# Newsletter
+mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+
+#-------------------------------
+# Build settings
 markdown: kramdown
-highlighter: rouge
+permalink: ':title/'
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
 
-# Paginate
-paginate: 10
+paginate: 7
+paginate_path: "/page/:num"
+
+include:
+  - _pages
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 
-
-# Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+#-------------------------------
+# Exclude from processing.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
