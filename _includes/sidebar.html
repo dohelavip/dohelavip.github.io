@@ -2,7 +2,7 @@
   
   {% if page.id %}
   <div class="widget widget-recent">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Son Gönderiler</h3>
     {% for post in site.posts limit:4 %}
     <div class="recent-posts">
       {% if post.image %}
@@ -24,7 +24,7 @@
   {% endif %}
 
   <div class="widget widget-social">
-    <h3 class="widget-title">Subscribe & Follow</h3>
+    <h3 class="widget-title">Abone ol & Takip et</h3>
     <ul class="social-profiles list-reset">
       {% if site.facebook %}
       <li class="social-profiles-item">
@@ -53,14 +53,14 @@
   </div>
 
   <div class="widget widget-newsletter">
-    <h3 class="widget-title">Newsletter</h3>
-    <div class="newsletter-subtitle">Get Interesting News</div>
-    <div class="newsletter-text">Receive the latest news via email.</div>
+    <h3 class="widget-title">Haber bülteni</h3>
+    <div class="newsletter-subtitle">İlginç Haberler Alın</div>
+    <div class="newsletter-text">E-posta yoluyla en son haberleri alın.</div>
     <form class="c-newsletter-form validate" action="{% if site.mailchimp %}//{{site.mailchimp}}{% else %}#{% endif %}" method="POST"
       id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
       <div class="newsletter-group">
         <div class="newsletter-group-top">
-          <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
+          <label class="screen-reader-text" for="mce-EMAIL">E-Posta adresi</label>
           <i class="email-icon ion ion-ios-mail"></i>
           <input class="newsletter-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="E-mail">
         </div>
@@ -74,7 +74,7 @@
     <h3 class="widget-title">Instagram</h3>
     <div class="instagram-box">
       <ul id="instafeed" class="instagram-grid list-reset clearfix"></ul>
-      <a class="instagram-prof" href="#">&#64;UserName</a>
+      <a class="instagram-prof" href="#">@rootdohela</a>
     </div>
   </div>
   {% endif %}
