@@ -42,6 +42,9 @@ Yukarıdaki örnekte, saldırgan bir açık anahtarı ele geçirir ve bununla, i
 ## Diğer Oturum Kaçırma Biçimleri
 
 Ortadaki adam, bir oturum kaçırma biçimidir. Ortadaki adam'a benzer diğer oturum kaçırma biçimleri şunlardır:
+
 *Sidejacking - Bu saldırı, oturum çerezlerini çalmak ve bir kullanıcının oturumunu ele geçirmek için veri paketlerinin koklanmasını içerir. Bu çerezler, site güvenli olsa bile şifrelenmemiş giriş bilgileri içerebilir.
+
 *Evil Twin - Bu, yasal bir ağ gibi görünen hileli bir Wi-Fi ağıdır. Kullanıcılar farkında olmadan hileli ağa katıldıklarında, saldırgan bir ortadaki adam saldırısı başlatarak sizinle ağ arasındaki tüm verileri yakalayabilir.
+
 *Koklama - Bu, cihazınızdan veya cihazınıza gönderilen verilere müdahale etmek için hazır yazılımları kullanan kötü niyetli bir aktörü içerir.
