@@ -15,7 +15,7 @@ Sqlmap, Kali linux içerisinde ki en <b>Sql Injection</b> aracıdır diyebiliriz
 Konsola "sqlmap -h" yazarak parametreleri görebilirsiniz. Ayrıca <b>sqlmap</b> aracını da anonim taramalarda gerçekleştirebilirsiniz.
 <b>Proxy</b> ve <b>tor</b> desteği ile kolayca bu tür anonim işlemleri gerçekleştirebilirsiniz. Lakin unutulmamalı ki bu tür 
 özellikler <b>Sql Injection</b> atağının uzun sürmesine neden olacaktır.
-### Table
+### Komutlar
 
 <div class="table-container">
   <table>
@@ -41,7 +41,7 @@ Konsola "sqlmap -h" yazarak parametreleri görebilirsiniz. Ayrıca <b>sqlmap</b>
 	<tr><td>--current-db</td><td>Genel database'yi gösterir.</td></tr>
 	<tr><td>--passwords</td><td>Database'deki şifreleri çeker.</td></tr>
 	<tr><td>--tables</td><td>Database'deki tabloları listeler.</td></tr>
-	<tr><td>--columns</td>Database içerisindeki tabloların kolonlarını listeler.<td></td></tr>
+	<tr><td>--columns</td><td>Database içerisindeki tabloların kolonlarını listeler.</td></tr>
 	<tr><td>--schema</td><td>Database'leri listeler.</td></tr>
 	<tr><td>--dump</td><td>Database'deki tablo girdilerini çeker.</td></tr>
 	<tr><td>--dump-all</td><td>Bütün tablo girdilerini çeker.</td></tr>
