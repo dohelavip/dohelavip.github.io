@@ -2,7 +2,7 @@
 layout: post
 title:  ORTADAKİ ADAM (MITM) SALDIRISI
 date:   2020-12-17 20:45:55 +0300
-image:  01.jpg
+image:  assets/images/01.jpg
 tags:   [linux]
 ---
 ## Ortadaki Adam Saldırısı Nedir? 
@@ -13,7 +13,7 @@ Ortadaki adam saldırısı, kötü niyetli bir aktörün, dışarıdan herhangi 
 
 Ortadaki adam saldırıları, MITM, MitM, MiM veya MIM dahil olmak üzere birçok şekilde kısaltılabilir.
 
-![]({{site.baseurl}}/img/04.jpg)
+![]({{site.baseurl}}assets/images/04.jpg)
 
 * Ortadaki adam, kötü niyetli bir aktör kendisini insanlar veya sistemler arasındaki bir iletişim oturumuna aktarıcı / vekil olarak eklediğinde ortaya çıkan bir tür gizli dinleme saldırısıdır.
 * Bir MITM saldırısı, işlemlerin, konuşmaların veya diğer verilerin aktarımının gerçek zamanlı işlenmesinden yararlanır.
@@ -21,14 +21,14 @@ Ortadaki adam saldırıları, MITM, MitM, MiM veya MIM dahil olmak üzere birço
 
 ## Ortadaki Adam Saldırı Örnekleri 
 
-![]({{site.baseurl}}/img/10.jpg)
+![]({{site.baseurl}}assets/images/10.jpg)
 
 Yukarıdaki görselde, saldırganın kendisini istemci ile sunucu arasındaki trafik akışı arasına soktuğunu fark edeceksiniz. 
 Artık saldırgan, iki uç nokta arasındaki iletişime izinsiz girdiğine göre, yanlış bilgi enjekte edebilir ve aralarında aktarılan verileri yakalayabilir.
 
 Aşağıda ortadaki adam kendisini soktuktan sonra neler olabileceğine dair başka bir örnek var.
 
-![]({{site.baseurl}}/img/11.jpg)
+![]({{site.baseurl}}assets/images/11.jpg)
 
 Bilgisayar korsanı, fonlara erişmek için konuşmanın her iki tarafını da taklit ediyor. Bu örnek, bir istemci ve sunucuyla yapılan görüşmelerin yanı sıra kişiden kişiye konuşmalar için de geçerlidir. 
 Yukarıdaki örnekte, saldırgan bir açık anahtarı ele geçirir ve bununla, insanları her iki tarafta da kandırmak için kendi kimlik bilgilerini, birbirleriyle güvenli bir şekilde konuştuklarına inanmaya dönüştürür.
