@@ -2,8 +2,12 @@
 layout: post
 title:  ORTADAKİ ADAM (MITM) SALDIRISI
 date:   2020-12-17 20:45:55 +0300
-image:  assets/images/01.jpg
+cover:  assets/images/01.jpg
 tags:   [linux]
+navigation: True
+class: post-template
+subclass: 'post'
+author: dohela
 ---
 ## Ortadaki Adam Saldırısı Nedir? 
 
