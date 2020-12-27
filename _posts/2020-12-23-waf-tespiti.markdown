@@ -2,8 +2,12 @@
 layout: post
 title:  WAF (Web Application Firewall) Tespiti
 date:   2020-12-23 16:04:00 +0300
-image:  assets/images/waf.jpg
+cover:  assets/images/waf.jpg
 tags:   linux
+navigation: True
+class: post-template
+subclass: 'post'
+author: dohela
 ---
 Web Uygulama güvenlik duvarı tespiti aslında bilgi toplama aşamalarının başında gelmektedir. Bu sayede işleyişimize bir yön vermiş oluruz.
 Yani <b>Firewall</b> olmayan bir sisteme yapılan işlemlerin bazıları başarısız olmaktadır. Bu nedenle bu taramayı yapmamız büyük önem taşır.

@@ -2,8 +2,12 @@
 layout: post
 title:  SQLMAP Nedir? (Giriş) 
 date:   2020-12-20 23:50:30 +0300
-image:  assets/images/sqlmapon.jpg
+cover:  assets/images/sqlmapon.jpg
 tags:   linux
+navigation: True
+class: post-template
+subclass: 'post'
+author: dohela
 ---
 ## SQLMAP Nedir? (Giriş)
 Sqlmap, Kali linux içerisinde ki en <b>Sql Injection</b> aracıdır diyebiliriz. Birçok veritabananına uygun çalışma şekilleri ve 
