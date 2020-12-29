@@ -1,0 +1,54 @@
+I"�<h2 id="ortadaki-adam-saldırısı-nedir">Ortadaki Adam Saldırısı Nedir?</h2>
+
+<p>Ortadaki adam saldırısı, kötü niyetli bir oyuncunun kendisini iki taraf arasındaki bir konuşmaya dahil ettiği, her iki tarafı taklit ettiği ve iki tarafın birbirine göndermeye çalıştığı bilgilere erişim sağladığı bir tür siber saldırıdır.</p>
+
+<p>Ortadaki adam saldırısı, kötü niyetli bir aktörün, dışarıdan herhangi biri çok geç olana kadar bilmeden, başka biri için tasarlanmış veya hiç gönderilmesi amaçlanmamış verileri durdurmasına, göndermesine ve almasına olanak tanır.</p>
+
+<p>Ortadaki adam saldırıları, MITM, MitM, MiM veya MIM dahil olmak üzere birçok şekilde kısaltılabilir.</p>
+
+<p><img src="/assets/imag/04.jpg" alt="" /></p>
+
+<ul>
+  <li>Ortadaki adam, kötü niyetli bir aktör kendisini insanlar veya sistemler arasındaki bir iletişim oturumuna aktarıcı / vekil olarak eklediğinde ortaya çıkan bir tür gizli dinleme saldırısıdır.</li>
+  <li>Bir MITM saldırısı, işlemlerin, konuşmaların veya diğer verilerin aktarımının gerçek zamanlı işlenmesinden yararlanır.</li>
+  <li>Ortadaki adam saldırıları, saldırganların çok geç olana kadar dışarıdan hiçbir tarafın haberi olmadan kendileri için olması amaçlanmamış verileri kesmesine, göndermesine ve almasına olanak tanır.</li>
+</ul>
+
+<h2 id="ortadaki-adam-saldırı-örnekleri">Ortadaki Adam Saldırı Örnekleri</h2>
+
+<p><img src="/assets/img/10.jpg" alt="" /></p>
+
+<p>Yukarıdaki görselde, saldırganın kendisini istemci ile sunucu arasındaki trafik akışı arasına soktuğunu fark edeceksiniz. 
+Artık saldırgan, iki uç nokta arasındaki iletişime izinsiz girdiğine göre, yanlış bilgi enjekte edebilir ve aralarında aktarılan verileri yakalayabilir.</p>
+
+<p>Aşağıda ortadaki adam kendisini soktuktan sonra neler olabileceğine dair başka bir örnek var.</p>
+
+<p><img src="/assets/images/11.jpg" alt="" /></p>
+
+<p>Bilgisayar korsanı, fonlara erişmek için konuşmanın her iki tarafını da taklit ediyor. Bu örnek, bir istemci ve sunucuyla yapılan görüşmelerin yanı sıra kişiden kişiye konuşmalar için de geçerlidir. 
+Yukarıdaki örnekte, saldırgan bir açık anahtarı ele geçirir ve bununla, insanları her iki tarafta da kandırmak için kendi kimlik bilgilerini, birbirleriyle güvenli bir şekilde konuştuklarına inanmaya dönüştürür.</p>
+
+<h2 id="mitm-saldırılarına-duyarlı-etkileşimler">MITM Saldırılarına Duyarlı Etkileşimler</h2>
+
+<ul>
+  <li>Finansal siteler - oturum açma ve kimlik doğrulama arasında</li>
+  <li>Genel veya özel anahtarlarla güvence altına alınması amaçlanan bağlantılar</li>
+  <li>Oturum açma gerektiren diğer siteler - erişime sahip olarak kazanılacak bir şeyin olduğu yerler</li>
+</ul>
+
+<h2 id="diğer-oturum-kaçırma-biçimleri">Diğer Oturum Kaçırma Biçimleri</h2>
+
+<p>Ortadaki adam, bir oturum kaçırma biçimidir. Ortadaki adam’a benzer diğer oturum kaçırma biçimleri şunlardır:</p>
+
+<ul>
+  <li>
+    <p>Sidejacking - Bu saldırı, oturum çerezlerini çalmak ve bir kullanıcının oturumunu ele geçirmek için veri paketlerinin koklanmasını içerir. Bu çerezler, site güvenli olsa bile şifrelenmemiş giriş bilgileri içerebilir.</p>
+  </li>
+  <li>
+    <p>Evil Twin - Bu, yasal bir ağ gibi görünen hileli bir Wi-Fi ağıdır. Kullanıcılar farkında olmadan hileli ağa katıldıklarında, saldırgan bir ortadaki adam saldırısı başlatarak sizinle ağ arasındaki tüm verileri yakalayabilir.</p>
+  </li>
+  <li>
+    <p>Koklama - Bu, cihazınızdan veya cihazınıza gönderilen verilere müdahale etmek için hazır yazılımları kullanan kötü niyetli bir aktörü içerir.</p>
+  </li>
+</ul>
+:ET

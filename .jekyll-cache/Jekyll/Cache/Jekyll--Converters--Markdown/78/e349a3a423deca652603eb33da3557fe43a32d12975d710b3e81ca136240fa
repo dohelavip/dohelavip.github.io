@@ -1,0 +1,97 @@
+I"�!<p>Tutorial Menggunakan Bahasa Indonesia dan Russia(учебник с индонезийской и русском языках)</p>
+
+<p>Maaf jika tutorial kurang jelas, atau ada yang salah silahkan dikoreksi (К сожалению, если учебник менее ясно, или есть что-то не так, пожалуйста, исправить)</p>
+
+<h2 id="alasan">ALASAN</h2>
+<p>mengapa ruby on rails ?  karena framework ruby on rails , MVC dan bahasa ruby sangat elegan dan enak dipandang, mungkin :) . tenang, gampang kok instal ruby dan ruby on rails di Ubuntu 
+(почему ruby on rails ? потому что рамки ruby on rails с MVC рубиновое кодирование очень элегантные и приятной для глаз, может :) . тихий, очень легко Интал рубин и ruby on rails в Ubuntu )</p>
+
+<p>jadi gak usah banyak kata, langsung aja kita mulai (так что не нужно много слов, прямо в точку, мы начали) :</p>
+
+<h2 id="persiapan-подготовка">PERSIAPAN (ПОДГОТОВКА)</h2>
+<p>-Koneksi Internet Stabil (Стабильное подключение к Интернету)</p>
+
+<p>-Akses Root (доступ root)</p>
+
+<p>-Sudah terinstal Curl (уже установлен Curl)</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">sudo</span> <span class="nt">apt-get</span> <span class="nt">install</span> <span class="nt">curl</span>
+</code></pre></div></div>
+
+<h2 id="instal-ruby-dengan-rvm-установить-ruby-с-rvm">INSTAL RUBY DENGAN RVM (УСТАНОВИТЬ RUBY С RVM)</h2>
+<p>rvm adalah ruby version manager . fungsinya untuk memanage versi dari ruby dan rails. 
+keuntunganya kita bisa berganti versi dari ruby dan rails dengan mudah dan gak ribet (RVM является менеджером рубина версии. функция управления версии рубин и рельсов. 
+преимущество, что мы можем изменить версию рубином и рельсы с легким и не сложно)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="err">\</span><span class="nt">curl</span> <span class="nt">-L</span> <span class="nt">https</span><span class="o">://</span><span class="nt">get</span><span class="nc">.rvm.io</span> <span class="o">|</span> <span class="nt">bash</span> <span class="nt">-s</span> <span class="nt">stable</span> <span class="nt">--ruby</span>
+</code></pre></div></div>
+
+<p>update rvm dan instal ruby, disini saya menggunakan ruby versi 2.4.0 (обновление RVM и установить рубин, здесь я использую рубин версии 2.4.0)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">rvm</span> <span class="nt">get</span> <span class="nt">stable</span> <span class="nt">--autolibs</span><span class="o">=</span><span class="nt">enable</span>
+</code></pre></div></div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">rvm</span> <span class="nt">install</span> <span class="nt">ruby</span>
+</code></pre></div></div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">rvm</span> <span class="nt">--default</span> <span class="nt">use</span> <span class="nt">ruby-2</span><span class="o">.</span><span class="err">4</span><span class="o">.</span><span class="err">0</span>
+</code></pre></div></div>
+
+<p>cek ruby sudah terinstal (рубин проверяет уже установлен)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">ruby</span> <span class="nt">-v</span>
+</code></pre></div></div>
+
+<p>cek gem (проверить камень)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">gem</span> <span class="nt">-v</span>
+</code></pre></div></div>
+
+<p>update gem (обновления драгоценный камень)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">gem</span> <span class="nt">update</span> <span class="nt">--system</span>
+</code></pre></div></div>
+
+<p>set rvm global gemset dan gem yg ada (множество глобальной RVM gemset и камень мыслимого)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">rvm</span> <span class="nt">gemset</span> <span class="nt">use</span> <span class="nt">global</span>
+</code></pre></div></div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">gem</span> <span class="nt">list</span>
+</code></pre></div></div>
+
+<p>instal rails dengan ruby gems (установить рельсы с рубиновыми камнями)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">gem</span> <span class="nt">install</span> <span class="nt">rails</span>
+</code></pre></div></div>
+
+<p>cek rails sudah teinstal (проверить рельсы уже)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">rails</span> <span class="nt">-v</span>
+</code></pre></div></div>
+
+<p>selesai . kita sudah menginstal ruby dan ruby on rails :) 
+kita sudah bisa buat project atau aplikasi dengan ruby on rails 
+(завершено. мы установили рубин и ruby on rails :) 
+мы были в состоянии создать проект или приложение с ruby on rails)</p>
+
+<h2 id="buat-project-baru-dengan-ruby-on-rails-создать-новый-проект-с-ruby-on-rails">BUAT PROJECT BARU DENGAN RUBY ON RAILS (СОЗДАТЬ НОВЫЙ ПРОЕКТ С RUBY ON RAILS)</h2>
+
+<p>buat direktori baru (создать новый каталог)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">mkdir</span> <span class="nt">project_rubyonrails</span>
+</code></pre></div></div>
+
+<p>masuk direktori project_rubyonrails (запись каталога project_rubyonrails)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">cd</span> <span class="nt">project_rubyonrails</span>
+</code></pre></div></div>
+
+<p>buat project baru ruby on rails (создать новый проект ruby on rails)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">rails</span> <span class="nt">new</span> <span class="nt">appku</span>
+</code></pre></div></div>
+
+<p>masuk direktori project appku (войти в каталог appku проекта)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">cd</span> <span class="nt">appku</span>
+</code></pre></div></div>
+
+<p>test server (тестовый сервер)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="nt">rails</span> <span class="nt">s</span>
+</code></pre></div></div>
+
+<p>buka browser dan ketik di address bar (откройте браузер и введите в адресной строке)</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">http</span><span class="o">://</span><span class="nt">localhost</span><span class="o">:</span><span class="err">3000</span>
+</code></pre></div></div>
+
+<p>jika tidak ada masalah . akan seperti gambar dibawah (если нет никаких проблем. будет, как показано ниже)</p>
+
+<p><img src="https://s3.gifyu.com/images/eNjSzlZ8UOw.jpg" alt="sucess" /></p>
+
+:ET

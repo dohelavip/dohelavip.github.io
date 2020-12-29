@@ -1,95 +1,80 @@
-# Jekyll configuration
+# Site settings 
+title: 'Dohela.com | Sanal Bir Blog...'
+description: 'Eski bir efsanenin yarım kalmış hikayesi...'
+keyword: 'ruby, rails, sinatra, javascript, vuejs, expressjs,web,web security,hosting,kali linux, windows,'
+url: '' 
+baseurl: ''
+
+# Navigation links
+nav:
+  home: '/'
+  about: '/about.html' 
+  tags: '/tags.html' 
+  project: '/projects.html' 
+
+# Footer
+footer:
+  since: 2021
+
+# Author 
+author: 'Dohela'
+nickname: 'Dohela'
+bio: 'hi @everyone, im programmer ruby on rails. blogging as my hobby'
+avatar: 'assets/img/profile.png'
+
+# Search
+search: true
+
+# Night mode
+nightMode: true #always_true
+
+# Comments
+comments:
+  disqus: true
+  disqus_url: 'https://dohela.disqus.com/embed.js'
+
+# MathJax by Ray-Eldath
+mathjax: false
+
+# Share
+social-share: false
+social-share-items: ['vk', 'facebook', 'twitter']
+
+# theme color
+theme-color: 'default' 
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'assets/img/banner.jpg'
+
+# SNS settings 
+# url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  email: 'root@dohela.com'
+  github: '//github.com/dohelavip'
+  linkedin: '//www.linkedin.com/in/'
+  instagram: '//www.instagram.com/rootdohela'
+  twitter: '//twitter.com/rootdohela'
+
+# Tags 
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Build settings
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', '_darkness', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
 markdown: kramdown
 highlighter: rouge
-paginate: 100 # it will paginate after this number
-language: 'eu-tr'
-words_per_minute: 200
+kramdown:
+  input: GFM
 
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: 
+# RSS
+RSS: false
 
-# Website info
-title: Dohela.com | Sanal Bir Blog..
-description: Eski bir efsanenin yarım kalmış hikayesi...
-cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
-logo_dark: assets/images/favicon.png
-favicon: assets/images/favicon.png
-CNAME: dohela.com #add cname for website to be created
+# Permalink
+permalink: /:title.rb
 
-# Social info
-navigation: True # show the navbar links
-subscribers: True # you need to connect an external service for this to work,
-# if 'True' the submit button is disabled for now, but you can change that
-# by editing `_includes/subscribe-form.html`
-twitter: spydohela # replace by your username
-facebook:  # replace by your username
-
-# Disqus
-disqus: False
-disqus_shortname: jekyller # replace with your disqus username
-
-# Google Analytics
-google_analytics: UA-69281367-1 # replace with your GA tracking identifier
-
-# Permalinks
-permalink: /:title
-# permalink: /author/:author
-# permalink: /tag/:tag
-
-# Authors' info in `_data/authors.yml`
-# Tags' info in `_data/tags_info.yml`
-
-# gems and other configs
-plugins_dir: [_plugins]
-plugins: [jekyll-paginate, jekyll-feed]
-
-feed:
-  path: feed.xml
-
-# Additional settings available on the front-matter
-# Site logo in the index.html (as in demo.ghost.io)
-# Author's page cover in _layouts/author.html
-# The same for page.html and tag.html layouts
-# Post's page cover as a per-post basis _posts/...
-# Disqus comments as a per-post basis
-# ...
-
-# Settings for building master branch with travis-ci
-# with jekyll-travis
-
-# Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
-safe: False
-lsi: False
-username: dohelavip
-repo: dohelavip.github.io
-branch: master
-relative_source: ../jasper2/
-destination: ../jasper2-pages/
-production_url:  https://dohela.com
-source_url:  https://github.com/dohelavip/dohelavip.github.io
-
-exclude:
-  - assets/css
-  - node_modules
-  - vendor
-  - .travis.yml
-  - Gemfile
-  - Gemfile.lock
-  - GHOST.txt
-  - gulpfile.js
-  - LICENSE
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README.md
-  - script.py
-  - changelog.md
-  - "*.Rmd"
-  - .git*
+# Plugins
+plugins: [jekyll-paginate]

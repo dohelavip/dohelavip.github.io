@@ -3,7 +3,7 @@ layout: post
 current: post
 title:  ORTADAKİ ADAM (MITM) SALDIRISI
 date:   2020-12-17 20:45:55 +0300
-cover:  assets/images/01.jpg
+cover:  assets/img/01.jpg
 tags:   [linux]
 navigation: True
 class: post-template
@@ -18,7 +18,7 @@ Ortadaki adam saldırısı, kötü niyetli bir aktörün, dışarıdan herhangi 
 
 Ortadaki adam saldırıları, MITM, MitM, MiM veya MIM dahil olmak üzere birçok şekilde kısaltılabilir.
 
-![]({{site.baseurl}}/assets/images/04.jpg)
+![]({{site.baseurl}}/assets/imag/04.jpg)
 
 * Ortadaki adam, kötü niyetli bir aktör kendisini insanlar veya sistemler arasındaki bir iletişim oturumuna aktarıcı / vekil olarak eklediğinde ortaya çıkan bir tür gizli dinleme saldırısıdır.
 * Bir MITM saldırısı, işlemlerin, konuşmaların veya diğer verilerin aktarımının gerçek zamanlı işlenmesinden yararlanır.
@@ -26,7 +26,7 @@ Ortadaki adam saldırıları, MITM, MitM, MiM veya MIM dahil olmak üzere birço
 
 ## Ortadaki Adam Saldırı Örnekleri 
 
-![]({{site.baseurl}}/assets/images/10.jpg)
+![]({{site.baseurl}}/assets/img/10.jpg)
 
 Yukarıdaki görselde, saldırganın kendisini istemci ile sunucu arasındaki trafik akışı arasına soktuğunu fark edeceksiniz. 
 Artık saldırgan, iki uç nokta arasındaki iletişime izinsiz girdiğine göre, yanlış bilgi enjekte edebilir ve aralarında aktarılan verileri yakalayabilir.

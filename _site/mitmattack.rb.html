@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORTADAKİ ADAM (MITM) SALDIRISI - Dohela.com | Sanal Bir Blog...</title>
+    <meta name="author"  content="Dohela">
+    <meta name="description" content="ORTADAKİ ADAM (MITM) SALDIRISI">
+    <meta name="keywords"  content="linux">
+    <!-- Open Graph -->
+    <meta property="og:title" content="ORTADAKİ ADAM (MITM) SALDIRISI - Dohela.com | Sanal Bir Blog...">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/mitmattack.rb">
+    <meta property="og:description" content="Eski bir efsanenin yarım kalmış hikayesi...">
+    <meta property="og:site_name" content="Dohela.com | Sanal Bir Blog...">
+    <link rel="stylesheet" href="//cdn.staticfile.org/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_roc50gemkxpw4s4i.css">
+    <link rel="stylesheet" href="/assets/css/github-markdown.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/share.min.css">
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap4.min.js"></script>
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/css/svg-with-js/js/fontawesome-all.js"></script>
+    <link href="/assets/css/bootstrap4.min.css" rel="stylesheet">
+    <link href="/assets/css/theme.css" rel="stylesheet">
+    <link href="/assets/css/syntax.css" rel="stylesheet">
+	
+    
+<style>
+    .markdown-body .anchor{
+        float: left;
+        margin-top: -8px;
+        margin-left: -20px;
+        padding-right: 4px;
+        line-height: 1;
+        opacity: 0;
+    }
+    
+    .markdown-body .anchor .anchor-icon{
+        font-size: 15px
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        let nodes = document.querySelector(".markdown-body").querySelectorAll("h1,h2,h3")
+        for(let node of nodes) {
+            var anchor = document.createElement("a")
+            var anchorIcon = document.createElement("i")
+            anchorIcon.setAttribute("class", "fa fa-anchor fa-lg anchor-icon")
+            anchorIcon.setAttribute("aria-hidden", true)
+            anchor.setAttribute("class", "anchor")
+            anchor.setAttribute("href", "#" + node.getAttribute("id"))
+            
+            anchor.onmouseover = function() {
+                this.style.opacity = "0.4"
+            }
+            
+            anchor.onmouseout = function() {
+                this.style.opacity = "0"
+            }
+            
+            anchor.appendChild(anchorIcon)
+            node.appendChild(anchor)
+        }
+    })
+</script>
+</head>
+
+
+<body>
+  <input id="nm-switch" type="hidden" value="true"> <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/"><font color="#c98e0e">root</font>dohela</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">Ana Sayfa</a>
+                <a class="nav-item nav-link" href="/projects">Projeler</a>
+                <a class="nav-item nav-link" href="/tags">Etiketler</a>
+                <a class="nav-item nav-link" href="/about">Hakkımda</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+  <header
+    class="g-banner post-header post-pattern-assets/img/banner.jpg bgcolor-default "
+    data-theme="default"
+  >
+    <div class="post-wrapper">
+      <div class="post-tags">
+        
+          
+            <a href="/tags.html#linux" class="post-tag">linux</a>
+          
+        
+      </div>
+      <h1>ORTADAKİ ADAM (MITM) SALDIRISI</h1>
+      <div class="post-meta">
+        <span class="post-meta-item"><i class="iconfont icon-author"></i>dohela</span>
+        <time class="post-meta-item" datetime="20-12-17"><i class="iconfont icon-date"></i>17 Dec 2020</time>
+      </div>
+    </div>
+    
+    <div class="filter"></div>
+      <div class="post-cover" style="background: url('/assets/img/01.jpg') center no-repeat; background-size: cover;"></div>
+    
+  </header>
+
+  <div class="post-content visible">
+    
+
+    <article class="markdown-body">
+      <h2 id="ortadaki-adam-saldırısı-nedir">Ortadaki Adam Saldırısı Nedir?</h2>
+
+<p>Ortadaki adam saldırısı, kötü niyetli bir oyuncunun kendisini iki taraf arasındaki bir konuşmaya dahil ettiği, her iki tarafı taklit ettiği ve iki tarafın birbirine göndermeye çalıştığı bilgilere erişim sağladığı bir tür siber saldırıdır.</p>
+
+<p>Ortadaki adam saldırısı, kötü niyetli bir aktörün, dışarıdan herhangi biri çok geç olana kadar bilmeden, başka biri için tasarlanmış veya hiç gönderilmesi amaçlanmamış verileri durdurmasına, göndermesine ve almasına olanak tanır.</p>
+
+<p>Ortadaki adam saldırıları, MITM, MitM, MiM veya MIM dahil olmak üzere birçok şekilde kısaltılabilir.</p>
+
+<p><img src="/assets/imag/04.jpg" alt="" /></p>
+
+<ul>
+  <li>Ortadaki adam, kötü niyetli bir aktör kendisini insanlar veya sistemler arasındaki bir iletişim oturumuna aktarıcı / vekil olarak eklediğinde ortaya çıkan bir tür gizli dinleme saldırısıdır.</li>
+  <li>Bir MITM saldırısı, işlemlerin, konuşmaların veya diğer verilerin aktarımının gerçek zamanlı işlenmesinden yararlanır.</li>
+  <li>Ortadaki adam saldırıları, saldırganların çok geç olana kadar dışarıdan hiçbir tarafın haberi olmadan kendileri için olması amaçlanmamış verileri kesmesine, göndermesine ve almasına olanak tanır.</li>
+</ul>
+
+<h2 id="ortadaki-adam-saldırı-örnekleri">Ortadaki Adam Saldırı Örnekleri</h2>
+
+<p><img src="/assets/img/10.jpg" alt="" /></p>
+
+<p>Yukarıdaki görselde, saldırganın kendisini istemci ile sunucu arasındaki trafik akışı arasına soktuğunu fark edeceksiniz. 
+Artık saldırgan, iki uç nokta arasındaki iletişime izinsiz girdiğine göre, yanlış bilgi enjekte edebilir ve aralarında aktarılan verileri yakalayabilir.</p>
+
+<p>Aşağıda ortadaki adam kendisini soktuktan sonra neler olabileceğine dair başka bir örnek var.</p>
+
+<p><img src="/assets/images/11.jpg" alt="" /></p>
+
+<p>Bilgisayar korsanı, fonlara erişmek için konuşmanın her iki tarafını da taklit ediyor. Bu örnek, bir istemci ve sunucuyla yapılan görüşmelerin yanı sıra kişiden kişiye konuşmalar için de geçerlidir. 
+Yukarıdaki örnekte, saldırgan bir açık anahtarı ele geçirir ve bununla, insanları her iki tarafta da kandırmak için kendi kimlik bilgilerini, birbirleriyle güvenli bir şekilde konuştuklarına inanmaya dönüştürür.</p>
+
+<h2 id="mitm-saldırılarına-duyarlı-etkileşimler">MITM Saldırılarına Duyarlı Etkileşimler</h2>
+
+<ul>
+  <li>Finansal siteler - oturum açma ve kimlik doğrulama arasında</li>
+  <li>Genel veya özel anahtarlarla güvence altına alınması amaçlanan bağlantılar</li>
+  <li>Oturum açma gerektiren diğer siteler - erişime sahip olarak kazanılacak bir şeyin olduğu yerler</li>
+</ul>
+
+<h2 id="diğer-oturum-kaçırma-biçimleri">Diğer Oturum Kaçırma Biçimleri</h2>
+
+<p>Ortadaki adam, bir oturum kaçırma biçimidir. Ortadaki adam’a benzer diğer oturum kaçırma biçimleri şunlardır:</p>
+
+<ul>
+  <li>
+    <p>Sidejacking - Bu saldırı, oturum çerezlerini çalmak ve bir kullanıcının oturumunu ele geçirmek için veri paketlerinin koklanmasını içerir. Bu çerezler, site güvenli olsa bile şifrelenmemiş giriş bilgileri içerebilir.</p>
+  </li>
+  <li>
+    <p>Evil Twin - Bu, yasal bir ağ gibi görünen hileli bir Wi-Fi ağıdır. Kullanıcılar farkında olmadan hileli ağa katıldıklarında, saldırgan bir ortadaki adam saldırısı başlatarak sizinle ağ arasındaki tüm verileri yakalayabilir.</p>
+  </li>
+  <li>
+    <p>Koklama - Bu, cihazınızdan veya cihazınıza gönderilen verilere müdahale etmek için hazır yazılımları kullanan kötü niyetli bir aktörü içerir.</p>
+  </li>
+</ul>
+
+    </article>
+
+    
+  <hr/>
+
+    
+  </div>
+
+
+  <section class="author-detail">
+    <section class="post-footer-item author-card">
+      <div class="avatar">
+        <img src="/assets/img/profile.png" alt="">
+      </div>
+      <div class="author-name" rel="author">Dohela</div>
+      <div class="bio">
+        <p>hi @everyone, im programmer ruby on rails. blogging as my hobby</p>
+      </div>
+      
+      <ul class="sns-links">
+        
+        <li>
+          <a href="root@dohela.com" target="_blank">
+                    <i class="iconfont icon-email"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//github.com/dohelavip" target="_blank">
+                    <i class="iconfont icon-github"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//www.linkedin.com/in/" target="_blank">
+                    <i class="iconfont icon-linkedin"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//www.instagram.com/rootdohela" target="_blank">
+                    <i class="iconfont icon-instagram"></i>
+                </a>
+        </li>
+        
+        <li>
+          <a href="//twitter.com/rootdohela" target="_blank">
+                    <i class="iconfont icon-twitter"></i>
+                </a>
+        </li>
+        
+      </ul>
+      
+    </section>
+    <section class="post-footer-item read-next">
+      
+      <div class="read-next-item">
+        <a href="/sqlmap-nedir.rb" class="read-next-link"></a>
+        <section>
+          <span>SQLMAP Nedir? (Giriş)</span>
+          <p>SQLMAP Nedir? (Giriş)Sqlmap, Kali linux içerisinde ki en ...</p>
+        </section>
+        
+        <div class="filter"></div>
+        <img src="/assets/img/sqlmapon.jpg" alt="">
+        
+     </div>
+      
+
+      
+    </section>
+    
+    <section class="post-footer-item comment">
+        <div id="disqus_thread"></div>
+    </section>
+    
+  </section>
+
+  <footer class="g-footer">
+  <section>[/] with ❤ by dohela ©
+  
+  
+    2021
+    -
+  
+  2020
+  </section>
+  <section>Powered by <a href="//jekyllrb.com">Jekyll</a> x <a href="//github.com/dohelavip">Dohela</a></section>
+</footer>
+
+
+  <script src="/assets/js/social-share.min.js"></script>
+  <script>
+    socialShare('.social-share', {
+      sites: [
+        
+          'vk'
+          ,
+          
+        
+          'facebook'
+          ,
+          
+        
+          'twitter'
+          
+        
+      ],
+      wechatQrcodeTitle: "分享到微信朋友圈",
+      wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
+    });
+  </script>
+
+  
+  <script>
+   
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://dohela.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  
+
+  <script src="/assets/js/prism.js"></script>
+  <script src="/assets/js/index.min.js"></script>
+</body>
+
+</html>
