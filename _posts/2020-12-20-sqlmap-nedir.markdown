@@ -1,5 +1,6 @@
 ---
 layout: post
+current: post
 title:  SQLMAP Nedir? (Giriş) 
 date:   2020-12-20 23:50:30 +0300
 cover:  assets/images/sqlmapon.jpg
@@ -14,7 +15,7 @@ Sqlmap, Kali linux içerisinde ki en <b>Sql Injection</b> aracıdır diyebiliriz
 <b>bypass</b> yöntemleri vardır. Ayrıca hızlı yapısı sayesinde oldukça ilgi görmekte. <b>Python</b> programlama dili ile yazıldığı için yapısını da inceleyebilirsiniz.
 <b>Wireshark</b> gibi araçlar ile de <b>sql injection</b> esnasında <b>sqlmap</b> aracının gönderdiği sorgulara bakıp farklı şeyler öğrenebilirsiniz. 
 
-![]({{site.baseurl}}assets/images/sqlmap.jpg)
+![]({{site.baseurl}}/assets/images/sqlmap.jpg)
 
 Konsola "sqlmap -h" yazarak parametreleri görebilirsiniz. Ayrıca <b>sqlmap</b> aracını da anonim taramalarda gerçekleştirebilirsiniz.
 <b>Proxy</b> ve <b>tor</b> desteği ile kolayca bu tür anonim işlemleri gerçekleştirebilirsiniz. Lakin unutulmamalı ki bu tür 
