@@ -1,25 +1,12 @@
-![Build Status](https://travis-ci.com/rokhimin//jekyll-darkness.svg?branch=master)
-![Coverage Status](https://img.shields.io/badge/coverage-99%25-brightgreen)
-
-# Darkness
-## About
-blog static using jekyll inspired h20
-
-###### Live
-- host heroku : https://rokhimin-darkness.herokuapp.com
-- host netlify : https://rokhimin-darkness.netlify.com
-
-## Deploy
-
-###### Heroku
-[![Deploy to heroku](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?button-url=https://github.com/rokhimin/Darkness/tree/deploy_heroku&template=https://github.com/rokhimin/jekyll-darkness/tree/deploy_heroku) 
-
-###### Netlify
- [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/rokhimin/jekyll-darkness)
-
-## Test Locally
-- ``bundle install``
-- ``bundle exec jekyll s``
-
-## License 
-MIT License.
+<h1>Login Register Template | Dark Version</h1>
+Pure CSS and HTML template using Materialize's icons<br>
+This is the dark version you can see the light version <a href="https://github.com/MrLolok/Login-Register-Light-Template/">here</a>
+<br>
+<br>
+Website Preview:
+<br><br><br>
+Login:
+<img src="https://image.prntscr.com/image/G-t2n0NTTkmIIQfbMxRpUA.png" title="Login page" />
+<br><br>
+Register:
+<img src="https://image.prntscr.com/image/SILqa3UgRqaTBsYwfhrNUg.png" title="Register page" />

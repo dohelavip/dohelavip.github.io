@@ -1,5 +1,0 @@
-I"$<h2 id="sqlmap-nedir-giriş">SQLMAP Nedir? (Giriş)</h2>
-<p>Sqlmap, Kali linux içerisinde ki en <b>Sql Injection</b> aracıdır diyebiliriz. Birçok veritabananına uygun çalışma şekilleri ve 
-<b>bypass</b> yöntemleri vardır. Ayrıca hızlı yapısı sayesinde oldukça ilgi görmekte. <b>Python</b> programlama dili ile yazıldığı için yapısını da inceleyebilirsiniz.
-<b>Wireshark</b> gibi araçlar ile de <b>sql injection</b> esnasında <b>sqlmap</b> aracının gönderdiği sorgulara bakıp farklı şeyler öğrenebilirsiniz.</p>
-:ET
