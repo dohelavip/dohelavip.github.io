@@ -392,11 +392,50 @@ section {
 figcaption {
 	font-size: smaller;
 }
-*{margin:0; padding:0;}
-	.menu{width:800px; height:48px;  margin:0 auto;border-bottom:1px solid red;}
-	.menu ul li {float:left;list-style-type:none;}
-	.menu ul li a{color:#fff; font:17px Arial;text-decoration:none;display:block; padding:14px 15px;transition:all .5s;-webkit-transition:all .5s;-moz-transition:all .5s;}
-	.menu ul li a:hover{
-		
-		color:red;
-	}
+li {
+    display: inline;
+}
+li {
+    float: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li a {
+    display: block;
+    padding: 14px 16px;
+    background-color: #ccc;
+    text-decoration: none;
+    color: #000000;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float:left;
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    background-color: #ccc;
+    text-decoration: none;
+    color: #000000;
+}
+
+li a:hover {
+    background-color: #888888;
+    color: white;
+}
+
+.aktif {
+    background-color: #1A3680;
+    color: white;
+}
