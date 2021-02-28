@@ -1,63 +1,28 @@
-<html>
+---
+layout: default
+---
 
-<head>
-    <meta charset="UTF-8">
-    <title>Dohela.com | Giriş</title>
-    <meta name="description" content="Dohela.com | Giriş">
-    <meta name="author" content="Dohela">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        body {
-            background-color: #303641;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="container-login">
-        <div id="title">
-            <i class="material-icons lock">lock</i> Giriş
-        </div>
-
-        <form>
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">face</i>
-                </div>
-                <input id="username" placeholder="Kullanıcı Adı" type="text" required class="validate" autocomplete="off">
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">vpn_key</i>
-                </div>
-                <input id="password" placeholder="Şifre" type="password" required class="validate" autocomplete="off">
-            </div>
-
-            <div class="remember-me">
-                <input type="checkbox">
-                <span style="color: #DDD">Beni Hatırla</span>
-            </div>
-
-            <input type="submit" value="Log In" />
-        </form>
-
-        <div class="forgot-password">
-            <a href="#">Şifreni mi unuttun?</a>
-        </div>
-        <div class="privacy">
-            <a href="#">Gizlilik Politikası</a>
-        </div>
-
-        <div class="register">
-            Henüz bir hesabın yok mu?
-            <a href="#"><button id="register-link">Buradan Kayıt Ol</button></a>
-        </div>
+<section id="intro">
+    <div class="flex-row-between">
+        <h1>Hi 👋</h1>
+        <button id="theme-toggle" onclick="modeSwitcher()">
+            <div></div>
+        </button>
     </div>
-</body>
+    <p>Maecenas euismod, ante eu mollis tempus, justo tellus tempus dui, non suscipit tellus diam vel ipsum. Phasellus
+        euismod auctor <a href="#">condimentum</a>. Aenean at ex dolor. Praesent eget venenatis erat, sit amet cursus
+        nulla. Vestibulum
+        rutrum, turpis id aliquam sagittis.
+    </p>
+</section>
 
-</html>
+<section class="posts">
+    <h3>BLOG</h3>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time></li>
+        {% endfor %}
+    </ul>
+</section>
