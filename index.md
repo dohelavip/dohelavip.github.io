@@ -1,5 +1,5 @@
 ---
-title: /
+title: Dohela
 layout: home
 permalink: /
 ---
